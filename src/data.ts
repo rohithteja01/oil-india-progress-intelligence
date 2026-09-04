@@ -7,13 +7,13 @@ export type Alert = { id: string; title: string; type: string; severity: string;
 export type Contradiction = { id: string; activity: string; source: string; reported: string; conflict: string; severity: string; status: string }
 export const navGroups = [
   { label: 'Overview', items: [['Overview', '/dashboard', 'LayoutDashboard']] },
-  { label: 'Control Tower', items: [['Project Health', '/project-health', 'Activity'], ['Critical Path', '/critical-path', 'Route'], ['Milestones', '/milestones', 'Flag']] },
-  { label: 'Project', items: [['Projects', '/projects', 'BriefcaseBusiness'], ['Activities', '/activities', 'ListChecks'], ['Schedule', '/schedule', 'CalendarRange']] },
+  { label: 'Control Tower', items: [['Project Health', '/project-health', 'Activity'], ['Critical Path', '/critical-path', 'Route']] },
+  { label: 'Project Management', items: [['Project', '/projects', 'BriefcaseBusiness'], ['Activities', '/activities', 'ListChecks'], ['Schedule', '/schedule', 'CalendarRange'], ['Milestones', '/milestones', 'Flag']] },
   { label: 'Data Hub', items: [['Documents', '/documents', 'FileText'], ['Site Photos', '/site-photos', 'Camera'], ['Voice Updates', '/voice-updates', 'Mic'], ['Data Sources', '/data-sources', 'Database']] },
   { label: 'AI Intelligence', items: [['Contradictions', '/contradictions', 'GitCompare'], ['Activity Discovery', '/activity-discovery', 'Sparkles'], ['Delay Intelligence', '/delay-intelligence', 'Timer'], ['Root Cause', '/root-cause', 'GitBranch'], ['Evidence', '/evidence', 'FileSearch']] },
   { label: 'Decision Center', items: [['Alerts', '/alerts', 'BellRing'], ['Recommendations', '/recommendations', 'Lightbulb'], ['Impact Propagation', '/impact-propagation', 'Network'], ['What-If Simulator', '/what-if', 'Shuffle'], ['Recovery Plans', '/recovery-plans', 'ClipboardCheck']] },
   { label: 'AI Copilot', items: [['AI Copilot', '/copilot', 'Bot']] },
-  { label: 'Reports', items: [['Daily Reports', '/reports/daily', 'FileBarChart'], ['Weekly Reports', '/reports/weekly', 'CalendarDays'], ['Analytics', '/reports/analytics', 'ChartNoAxesCombined']] },
+  { label: 'Reports', items: [['Daily', '/reports/daily', 'FileBarChart'], ['Weekly', '/reports/weekly', 'CalendarDays'], ['Analytics', '/reports/analytics', 'ChartNoAxesCombined']] },
   { label: 'Admin', items: [['Users & Roles', '/admin/users', 'UsersRound'], ['Audit Trail', '/admin/audit-trail', 'History'], ['Settings', '/admin/settings', 'Settings2']] },
 ]
 export const activities: Activity[] = [
